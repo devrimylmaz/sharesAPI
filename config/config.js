@@ -1,5 +1,5 @@
 module.exports = {
-    username: 'postgres',
+    username: 'admin',
     password: 'admin',
     database: 'shareDb',
     host: 'localhost',

@@ -1,9 +1,9 @@
 const db = require('../models');
 const Trade = db.trades;
 
-async function createTrade(type, quantity, shareId, portfolioId) {
+async function createTrade(type, quantity, shareSymbol, portfolioId) {
     try {
-        const newTrade = await Trade.create({ type, quantity, shareId, portfolioId });
+        const newTrade = await Trade.create({ type, quantity, shareSymbol, portfolioId });
         return newTrade;
     } catch (error) {
         console.error(error);

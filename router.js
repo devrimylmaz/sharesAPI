@@ -13,7 +13,7 @@ module.exports = (function () {
      *
      * @apiDescription Buy share
      *
-     * @apiParam (body) {String} shareId Id of the share
+     * @apiParam (body) {String} shareSymbol Symbol of the share
      * @apiParam (body) {Integer} quantity Quantity
      * @apiParam (body) {String} userId Id of the user
      * @apiParam (body) {String} portfolioId Id of the portfolio
@@ -36,7 +36,7 @@ module.exports = (function () {
      *
      * @apiDescription Sell share
      *
-     * @apiParam (body) {String} shareId Id of the share
+     * @apiParam (body) {String} shareSymbol Symbol of the share
      * @apiParam (body) {Integer} quantity Quantity
      * @apiParam (body) {String} userId Id of the user
      * @apiParam (body) {String} portfolioId Id of the portfolio

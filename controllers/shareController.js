@@ -111,7 +111,7 @@ async function sellShare(req, res) {
             res.status(500).json({ error: 'Failed to sell share. There is not enough quantity!' });
         }
 
-        const newTrade = tradeController.createTrade("SELL", quantity, shareId, portfolioId);
+        const newTrade = tradeController.createTrade("SELL", quantity, shareSymbol, portfolioId);
         res.status(200).json(newTrade);
     } catch (error) {
         console.error(error);
